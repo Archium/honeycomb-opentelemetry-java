@@ -1,18 +1,17 @@
-package io.honeycomb.opentelemetry;
+package io.honeycomb.opentelemetry.sdk.trace.samplers;
 
-import java.util.Collections;
-
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Assertions;
-import io.honeycomb.opentelemetry.sdk.trace.samplers.DeterministicTraceSampler;
-import io.opentelemetry.sdk.trace.IdGenerator;
-import io.opentelemetry.sdk.trace.samplers.Sampler;
-import io.opentelemetry.sdk.trace.samplers.SamplingDecision;
-import io.opentelemetry.sdk.trace.samplers.SamplingResult;
 import io.opentelemetry.api.common.AttributeKey;
 import io.opentelemetry.api.common.Attributes;
 import io.opentelemetry.api.trace.SpanKind;
 import io.opentelemetry.context.Context;
+import io.opentelemetry.sdk.trace.IdGenerator;
+import io.opentelemetry.sdk.trace.samplers.Sampler;
+import io.opentelemetry.sdk.trace.samplers.SamplingDecision;
+import io.opentelemetry.sdk.trace.samplers.SamplingResult;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
+import java.util.Collections;
 
 public class DeterministicTraceSamplerTest {
 
